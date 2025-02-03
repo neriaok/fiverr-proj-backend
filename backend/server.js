@@ -9,8 +9,18 @@ import { userRoutes } from './api/user/user.routes.js'
 import { reviewRoutes } from './api/review/review.routes.js'
 import { gigRoutes } from './api/gig/gig.routes.js'
 import { setupSocketAPI } from './services/socket.service.js'
+import { dbService } from '../backend/services/db.service.js'
 
 import { setupAsyncLocalStorage } from './middlewares/setupAls.middleware.js'
+
+console.log('server.js.log');
+
+// const collection = dbService.getCollection('gigs').find()
+// console.log(collection);
+const gigsCollection = await dbService.getCollection('gigs'); // Get the collection
+const gigs = await gigsCollection.find({}).toArray()
+console.log(gigs);
+
 
 const app = express()
 const server = http.createServer(app)

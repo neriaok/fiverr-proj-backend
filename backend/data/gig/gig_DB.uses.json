@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "67a094dd28e591c851857169"
+  },
+  "fullname": "Reut Edry",
+  "imgUrl": "/img/faces/Reut Edry.jpg",
+  "username": "reuted",
+  "password": "password123",
+  "level": "premium"
+},
+{
+  "_id": {
+    "$oid": "67a094dd28e591c85185716a"
+  },
+  "fullname": "Jane Smith",
+  "imgUrl": "/img/faces/Jane Smith.jpg",
+  "username": "janesmith",
+  "password": "securepass456",
+  "level": "basic"
+},
+{
+  "_id": {
+    "$oid": "67a095ef28e591c85185716c"
+  },
+  "fullname": "Neria Okabi",
+  "imgUrl": "/img/faces/Neria okabi.jpg",
+  "username": "neriaok",
+  "password": "12345",
+  "level": "basic"
+},
+{
+  "_id": {
+    "$oid": "67a095ef28e591c85185716d"
+  },
+  "fullname": "Aviv Buzaglo",
+  "imgUrl": "/img/faces/Aviv Buzaglo.jpg",
+  "username": "avivbu",
+  "password": "678910",
+  "level": "premium"
+}]

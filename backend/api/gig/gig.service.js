@@ -22,7 +22,7 @@ async function query(filterBy = { txt: '' }) {
         const criteria = _buildCriteria(filterBy)
         const sort = _buildSort(filterBy)
 
-		const collection = await dbService.getCollection('gig')
+		const collection = await dbService.getCollection('gigs')
 		console.log(collection);
 		
 		var gigCursor = await collection.find(criteria, { sort })
