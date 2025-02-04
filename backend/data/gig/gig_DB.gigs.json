@@ -1,4 +1,7 @@
 [{
+  "_id": {
+    "$oid": "67a1e33c19de86043c4f2627"
+  },
   "title": "I will design your logo",
   "price": 100,
   "owner": {
@@ -22,8 +25,7 @@
     "/img/img1second.jpg"
   ],
   "tags": [
-    "Arts And Crafts",
-    "Logo Design"
+    "graphics&design"
   ],
   "likedByUsers": [
     "mini-user"
@@ -99,6 +101,9 @@
   }
 },
 {
+  "_id": {
+    "$oid": "67a1e33c19de86043c4f2628"
+  },
   "title": "I will write a compelling blog post",
   "price": 250,
   "owner": {
@@ -122,8 +127,7 @@
     "/img/img2third.jpg"
   ],
   "tags": [
-    "Writing",
-    "Blogging"
+    "writing&translation" , "graphics&design"
   ],
   "likedByUsers": [
     "mini-user",
@@ -200,6 +204,9 @@
   }
 },
 {
+  "_id": {
+    "$oid": "67a1e33c19de86043c4f2629"
+  },
   "title": "I will help you with your social media",
   "price": 400,
   "owner": {
@@ -222,8 +229,7 @@
     "/img/img3second.jpg"
   ],
   "tags": [
-    "Marketing",
-    "Social Media"
+    "marketing" , "business"
   ],
   "likedByUsers": [
     "user4",
@@ -300,6 +306,9 @@
   }
 },
 {
+  "_id": {
+    "$oid": "67a1e33c19de86043c4f262a"
+  },
   "title": "I will edit your YouTube song video",
   "price": 150,
   "owner": {
@@ -319,9 +328,7 @@
     "/img/img4second.jpg"
   ],
   "tags": [
-    "Marketing",
-    "Video Editing",
-    "YouTube"
+    "video&animation"
   ],
   "likedByUsers": [
     "user5"
@@ -391,6 +398,9 @@
   }
 },
 {
+  "_id": {
+    "$oid": "67a1e33c19de86043c4f262b"
+  },
   "title": "I will create a professional website for you",
   "price": 800,
   "owner": {
@@ -400,17 +410,17 @@
     "level": "Level 2",
     "rate": 6
   },
-  "daysToMake": 7,
-  "description": "Launch a professional website to showcase your business or portfolio.",
-  "avgResponseTime": 1,
+  "daysToMake": 5,
+  "description": "Get a responsive and modern website built for your business.",
+  "avgResponseTime": 3,
   "loc": "Israel",
   "imgUrls": [
     "/img/img5.jpg",
     "/img/img5second.jpg"
   ],
   "tags": [
-    "Web Development",
-    "Design"
+    "programing&tech",
+    "graphics&design"
   ],
   "likedByUsers": [
     "user6"
@@ -418,7 +428,7 @@
   "reviews": [
     {
       "id": "r105",
-      "txt": "My website looks incredible! Exactly what I wanted.",
+      "txt": "Excellent website design! Very professional.",
       "rate": 6,
       "by": {
         "_id": "u110",
@@ -429,50 +439,50 @@
     }
   ],
   "aboutThisGig": {
-    "overview": "I will design and develop a professional website that is modern, user-friendly, and mobile-responsive.",
+    "overview": "I will design and develop a responsive website that works on all devices.",
     "services": [
       "Custom website design",
-      "Responsive layout for mobile and desktop",
-      "SEO-friendly structure",
-      "Content management system integration"
+      "Responsive design for mobile and desktop",
+      "SEO optimized",
+      "User-friendly interface"
     ],
     "deliverables": [
-      "A fully responsive, custom-built website",
-      "Complete CMS integration",
-      "SEO-friendly structure"
+      "A fully functional website",
+      "HTML, CSS, and JavaScript code",
+      "SEO optimized for search engines"
     ],
     "whyMe": [
-      "Experienced web designer",
+      "Experienced web developer",
       "Fast delivery",
       "100% satisfaction guarantee"
     ],
-    "note": "Please provide any content and reference websites that you like before placing an order.",
-    "thankYou": "Thank you for considering my gig!",
+    "note": "Please provide your brand colors and any specific requirements.",
+    "thankYou": "Thank you for choosing my gig!",
     "packages": {
       "basic": {
         "services": [
           "Custom website design",
-          "Responsive layout for mobile and desktop",
-          "SEO-friendly structure"
+          "Responsive design for mobile and desktop",
+          "SEO optimized"
         ],
         "price": 800
       },
       "standard": {
         "services": [
           "Custom website design",
-          "Responsive layout for mobile and desktop",
-          "SEO-friendly structure",
-          "Content management system integration"
+          "Responsive design for mobile and desktop",
+          "SEO optimized",
+          "E-commerce integration"
         ],
         "price": 1000
       },
       "premium": {
         "services": [
           "Custom website design",
-          "Responsive layout for mobile and desktop",
-          "SEO-friendly structure",
-          "Content management system integration",
-          "E-commerce functionality"
+          "Responsive design for mobile and desktop",
+          "SEO optimized",
+          "E-commerce integration",
+          "Custom animations"
         ],
         "price": 1500
       }
@@ -480,6 +490,9 @@
   }
 },
 {
+  "_id": {
+    "$oid": "67a1e35919de86043c4f262d"
+  },
   "title": "I will assist you in finding a job",
   "price": 150,
   "owner": {
@@ -498,8 +511,7 @@
     "/img/img6second.jpg"
   ],
   "tags": [
-    "Career Advice",
-    "Job Search"
+    "business" , "Marketing"
   ],
   "likedByUsers": [
     "user7"
@@ -568,6 +580,9 @@
   }
 },
 {
+  "_id": {
+    "$oid": "67a1e35919de86043c4f262e"
+  },
   "title": "I will make a personalized fitness plan",
   "price": 150,
   "owner": {
@@ -587,8 +602,7 @@
     "/img/img7third.jpg"
   ],
   "tags": [
-    "Fitness",
-    "Personal Trainer"
+    "business"
   ],
   "likedByUsers": [
     "user8",
@@ -662,6 +676,9 @@
   }
 },
 {
+  "_id": {
+    "$oid": "67a1e35919de86043c4f262f"
+  },
   "title": "I will translate your documents",
   "price": 80,
   "owner": {
@@ -680,8 +697,7 @@
     "/img/img8second.jpg"
   ],
   "tags": [
-    "Translation",
-    "Language"
+    "writing&translation"
   ],
   "likedByUsers": [
     "user3",
@@ -754,6 +770,9 @@
   }
 },
 {
+  "_id": {
+    "$oid": "67a1e35919de86043c4f2630"
+  },
   "title": "I will design a professional business card for you",
   "price": 75,
   "owner": {
@@ -772,8 +791,7 @@
     "/img/img9second.jpg"
   ],
   "tags": [
-    "Design",
-    "Business Card"
+    "graphics&design"
   ],
   "likedByUsers": [
     "user10"
@@ -838,9 +856,12 @@
   }
 },
 {
+  "_id": {
+    "$oid": "67a1e36f19de86043c4f2632"
+  },
   "title": "I will create a stunning video intro for your YouTube channel",
   "price": 120,
-  "owner":{
+  "owner": {
     "_id": {
       "$oid": "67a094dd28e591c851857169"
     },
@@ -860,9 +881,7 @@
     "/img/img10second.jpg"
   ],
   "tags": [
-    "Video Editing",
-    "YouTube",
-    "Intro"
+    "video&animation"
   ],
   "likedByUsers": [
     "user11"
@@ -927,6 +946,9 @@
   }
 },
 {
+  "_id": {
+    "$oid": "67a1e36f19de86043c4f2633"
+  },
   "title": "I will design a beautiful e-book cover",
   "price": 90,
   "owner": {
@@ -949,9 +971,7 @@
     "/img/img11second.jpg"
   ],
   "tags": [
-    "Design",
-    "E-book",
-    "Book Cover"
+    "graphics&design"
   ],
   "likedByUsers": [
     "user12"
@@ -1016,6 +1036,9 @@
   }
 },
 {
+  "_id": {
+    "$oid": "67a1e36f19de86043c4f2634"
+  },
   "title": "I will provide voiceover services for your project",
   "price": 150,
   "owner": {
@@ -1038,9 +1061,7 @@
     "/img/img12second.jpg"
   ],
   "tags": [
-    "Voiceover",
-    "Audio",
-    "Commercial"
+    "music&audio"
   ],
   "likedByUsers": [
     "user13"
