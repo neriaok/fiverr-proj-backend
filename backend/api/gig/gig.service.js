@@ -17,21 +17,18 @@ export const gigService = {
 	removeGigMsg,
 }
 
-async function query(filterBy = { txt: '' }) {
+async function query(filterBy = {}) {
+	console.log('service:', filterBy);
 	try {
+		console.log('before:');
+		
         const criteria = _buildCriteria(filterBy)
-        const sort = _buildSort(filterBy)
+		console.log('criteria', criteria);
+		
 
 		const collection = await dbService.getCollection('gigs')
-		console.log(collection);
+		const gigs = await collection.find(criteria).toArray()
 		
-		var gigCursor = await collection.find(criteria, { sort })
-
-		if (filterBy.pageIdx !== undefined) {
-			gigCursor.skip(filterBy.pageIdx * PAGE_SIZE).limit(PAGE_SIZE)
-		}
-
-		const gigs = gigCursor.toArray()
 		return gigs
 	} catch (err) {
 		logger.error('cannot find gigs', err)
@@ -133,12 +130,34 @@ async function removeGigMsg(gigId, msgId) {
 }
 
 function _buildCriteria(filterBy) {
-    const criteria = {
-        vendor: { $regex: filterBy.txt, $options: 'i' },
-        speed: { $gte: filterBy.minSpeed },
+    const criteria = {};
+    console.log('before if');
+    
+    // If `txt` is provided, search in title and description
+    if (filterBy.txt) {
+        criteria.$or = [  // Use $or to allow matching either title or description
+            { title: { $regex: filterBy.txt, $options: 'i' } },  // case-insensitive search in title
+            { description: { $regex: filterBy.txt, $options: 'i' } }  // case-insensitive search in description
+        ];
     }
-
-    return criteria
+    
+    // If `price` is provided, filter by price (price is a number)
+    if (filterBy.price) {
+        criteria.price = { $lte: filterBy.price };  // price less than or equal to the given price
+    }
+    
+    // If `tag` is provided, match the tags in the `tags` array
+    if (filterBy.tag) {
+        criteria.tags = { $in: filterBy.tag.split(',') };  // Support multiple tags (comma separated)
+    }
+    
+    // If `deliveryTime` (or `daysToMake`) is provided, filter by the delivery time (in days)
+    if (filterBy.deliveryTime) {
+        criteria.daysToMake = { $lte: filterBy.deliveryTime };  // Less than or equal to the specified delivery time
+    }
+    
+    console.log('criteria built:', criteria);
+    return criteria;
 }
 
 function _buildSort(filterBy) {

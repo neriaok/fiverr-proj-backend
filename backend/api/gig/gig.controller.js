@@ -2,14 +2,20 @@ import { logger } from '../../services/logger.service.js'
 import { gigService } from './gig.service.js'
 
 export async function getGigs(req, res) {
+	console.log('get gigs BAK');
+	console.log('req:', req.query);
+
+
 	try {
+
 		const filterBy = {
 			txt: req.query.txt || '',
-			minSpeed: +req.query.minSpeed || 0,
-            sortField: req.query.sortField || '',
-            sortDir: req.query.sortDir || 1,
-			pageIdx: req.query.pageIdx,
+			price: +req.query.price || '',
+			tag: req.query.tag || '',
+			deliveryTime: req.query.deliveryTime || '',
 		}
+		console.log('controller: ', filterBy);
+	
 		const gigs = await gigService.query(filterBy)
 		res.json(gigs)
 	} catch (err) {
@@ -44,12 +50,12 @@ export async function addGig(req, res) {
 
 export async function updateGig(req, res) {
 	const { loggedinUser, body: gig } = req
-    const { _id: userId, isAdmin } = loggedinUser
+	const { _id: userId, isAdmin } = loggedinUser
 
-    if(!isAdmin && gig.owner._id !== userId) {
-        res.status(403).send('Not your gig...')
-        return
-    }
+	if (!isAdmin && gig.owner._id !== userId) {
+		res.status(403).send('Not your gig...')
+		return
+	}
 
 	try {
 		const updatedGig = await gigService.update(gig)
