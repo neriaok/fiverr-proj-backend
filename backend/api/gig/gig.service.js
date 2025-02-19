@@ -18,9 +18,8 @@ export const gigService = {
 }
 
 async function query(filterBy = {}) {
-	console.log('service:', filterBy);
+	// console.log('service:', filterBy);
 	try {
-		console.log('before:');
 		
         const criteria = _buildCriteria(filterBy)
 		console.log('criteria', criteria);
@@ -37,6 +36,8 @@ async function query(filterBy = {}) {
 }
 
 async function getById(gigId) {
+	console.log('getbyid backand');
+	
 	try {
         const criteria = { _id: ObjectId.createFromHexString(gigId) }
 
@@ -130,6 +131,8 @@ async function removeGigMsg(gigId, msgId) {
 }
 
 function _buildCriteria(filterBy) {
+	console.log('criteria',filterBy);
+	
     const criteria = {};
     console.log('before if');
     
@@ -152,9 +155,10 @@ function _buildCriteria(filterBy) {
     }
     
     // If `deliveryTime` (or `daysToMake`) is provided, filter by the delivery time (in days)
-    if (filterBy.deliveryTime) {
-        criteria.daysToMake = { $lte: filterBy.deliveryTime };  // Less than or equal to the specified delivery time
-    }
+	if (filterBy.deliveryTime) {
+		criteria.daysToMake = { $gte: +filterBy.deliveryTime };  // Greater than or equal to the specified delivery time
+	}
+	
     
     console.log('criteria built:', criteria);
     return criteria;

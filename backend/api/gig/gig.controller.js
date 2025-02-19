@@ -2,8 +2,8 @@ import { logger } from '../../services/logger.service.js'
 import { gigService } from './gig.service.js'
 
 export async function getGigs(req, res) {
-	console.log('get gigs BAK');
-	console.log('req:', req.query);
+	// console.log('get gigs BAK');
+	// console.log('req:', req.query);
 
 
 	try {

@@ -5,17 +5,13 @@
   "title": "I will design your logo",
   "price": 100,
   "owner": {
-    "_id": {
-      "$oid": "67a095ef28e591c85185716c"
-    },
-    "fullname": "Neria Okabi",
-    "imgUrl": "/img/faces/Neria okabi.jpg",
-    "username": "neriaok",
-    "password": "12345",
-    "level": "basic",
-    "rate": 4
+    "_id": "u113",
+    "fullname": "Emily Ray",
+    "imgUrl": "/img/faces/Emily Ray.jpg",
+    "level": "Top Rated",
+    "rate": 4.9
   },
-  "daysToMake": 3,
+  "daysToMake": 8,
   "description": "Make unique logo that stands out for your business or brand.",
   "avgResponseTime": 1,
   "loc": "Ghana",
@@ -25,7 +21,8 @@
     "/img/img1second.jpg"
   ],
   "tags": [
-    "graphics&design"
+    "graphics&design",
+    "Marketing"
   ],
   "likedByUsers": [
     "mini-user"
@@ -108,16 +105,16 @@
   "price": 250,
   "owner": {
     "_id": {
-      "$oid": "67a095ef28e591c85185716d"
+      "$oid": "67a094dd28e591c851857169"
     },
-    "fullname": "Aviv Buzaglo",
-    "imgUrl": "/img/faces/Aviv Buzaglo.jpg",
-    "username": "avivbu",
-    "password": "678910",
-    "level": "premium",
-    "rate": 7
+    "fullname": "Reut Edry",
+    "imgUrl": "/img/faces/Reut Edry.jpg",
+    "username": "reuted",
+    "password": "password123",
+    "level": "Top Rated",
+    "rate": 4.8
   },
-  "daysToMake": 5,
+  "daysToMake": 2,
   "description": "Get a high-quality, well-researched blog post that engages your audience.",
   "avgResponseTime": 2,
   "loc": "USA",
@@ -127,7 +124,8 @@
     "/img/img2third.jpg"
   ],
   "tags": [
-    "writing&translation" , "graphics&design"
+    "writing&translation",
+    "graphics&design"
   ],
   "likedByUsers": [
     "mini-user",
@@ -211,16 +209,16 @@
   "price": 400,
   "owner": {
     "_id": {
-      "$oid": "67a094dd28e591c851857169"
+      "$oid": "67a095ef28e591c85185716d"
     },
-    "fullname": "Reut Edry",
-    "imgUrl": "/img/faces/Reut Edry.jpg",
-    "username": "reuted",
-    "password": "password123",
-    "level": "premium",
-    "rate": 4.8
+    "fullname": "Aviv Buzaglo",
+    "imgUrl": "/img/faces/Aviv Buzaglo.jpg",
+    "username": "avivbu",
+    "password": "678910",
+    "level": "Top Rated",
+    "rate": 7
   },
-  "daysToMake": 7,
+  "daysToMake": 3,
   "description": "Boost your online presence and grow your audience with a tailored social media strategy.",
   "avgResponseTime": 3,
   "loc": "UK",
@@ -229,7 +227,8 @@
     "/img/img3second.jpg"
   ],
   "tags": [
-    "marketing" , "business"
+    "marketing",
+    "business"
   ],
   "likedByUsers": [
     "user4",
@@ -328,7 +327,9 @@
     "/img/img4second.jpg"
   ],
   "tags": [
-    "video&animation"
+    "video&animation",
+    "Marketing",
+    "music&audio"
   ],
   "likedByUsers": [
     "user5"
@@ -420,7 +421,9 @@
   ],
   "tags": [
     "programing&tech",
-    "graphics&design"
+    "graphics&design",
+    "business",
+    "Marketing"
   ],
   "likedByUsers": [
     "user6"
@@ -493,88 +496,93 @@
   "_id": {
     "$oid": "67a1e35919de86043c4f262d"
   },
-  "title": "I will assist you in finding a job",
-  "price": 150,
+  "title": "I will teach you guitar lessons online",
+  "price": 60,
   "owner": {
     "_id": "u111",
-    "fullname": "Saan Dee",
-    "imgUrl": "/img/faces/Saan Dee.jpg",
+    "fullname": "David Smith",
+    "imgUrl": "/img/faces/david smith.jpg",
     "level": "Level 1",
-    "rate": 3.8
+    "rate": 4.7
   },
-  "daysToMake": 4,
-  "description": "Need help with your job search? I can provide tips and strategies to improve your chances.",
-  "avgResponseTime": 1,
-  "loc": "Canada",
+  "daysToMake": 5,
+  "description": "Learn to play guitar from an experienced teacher. Online lessons tailored to your level.",
+  "avgResponseTime": 2,
+  "loc": "USA",
   "imgUrls": [
     "/img/img6.jpg",
-    "/img/img6second.jpg"
+    "/video/video6.mp4"
   ],
   "tags": [
-    "business" , "Marketing"
+    "music&audio",
+    "consulting"
   ],
   "likedByUsers": [
-    "user7"
+    "mini-user",
+    "user5"
   ],
   "reviews": [
     {
       "id": "r106",
-      "txt": "The job search strategies were really helpful. I found a great job!",
-      "rate": 4,
+      "txt": "Great lessons! David is an excellent teacher.",
+      "rate": 5,
       "by": {
         "_id": "u112",
         "fullname": "User 7",
         "imgUrl": "https://via.placeholder.com/50",
-        "location": "USA"
+        "location": "UK"
       }
     }
   ],
   "aboutThisGig": {
-    "overview": "I will guide you through the job search process, from resume writing to interview tips and job hunting strategies.",
+    "overview": "Learn to play guitar from an experienced and professional teacher. Lessons will be tailored to your skill level.",
     "services": [
-      "Resume writing",
-      "Cover letter assistance",
-      "Job search strategies",
-      "Interview tips"
+      "Beginner, intermediate, or advanced lessons",
+      "Online lessons via Zoom or Skype",
+      "Customized lesson plans"
     ],
     "deliverables": [
-      "A tailored resume",
-      "A professional cover letter",
-      "Job search strategies and tips"
+      "Personalized lesson notes",
+      "Video tutorials",
+      "Progress tracking"
     ],
     "whyMe": [
-      "Experienced career coach",
-      "Fast delivery",
+      "Experienced guitar teacher",
+      "Flexible lesson schedules",
       "100% satisfaction guarantee"
     ],
-    "note": "Please provide your current resume and details about the job you're targeting.",
-    "thankYou": "Thank you for considering my gig!",
+    "note": "Please contact me with your current skill level and any specific goals you have before placing an order.",
+    "thankYou": "Thank you for choosing my gig!",
     "packages": {
       "basic": {
         "services": [
-          "Resume writing",
-          "Cover letter assistance"
+          "Beginner, intermediate, or advanced lessons",
+          "Online lessons via Zoom or Skype",
+          "Customized lesson plans"
         ],
-        "price": 150
+        "price": 60
       },
       "standard": {
         "services": [
-          "Resume writing",
-          "Cover letter assistance",
-          "Job search strategies",
-          "Interview tips"
+          "Beginner, intermediate, or advanced lessons",
+          "Online lessons via Zoom or Skype",
+          "Customized lesson plans",
+          "Progress tracking and feedback",
+          "Access to exclusive resources"
         ],
-        "price": 250
+        "price": 100
       },
       "premium": {
         "services": [
-          "Resume writing",
-          "Cover letter assistance",
-          "Job search strategies",
-          "Interview tips",
-          "One-on-one coaching session"
+          "Beginner, intermediate, or advanced lessons",
+          "Online lessons via Zoom or Skype",
+          "Customized lesson plans",
+          "Progress tracking and feedback",
+          "Access to exclusive resources",
+          "One-on-One Q&A sessions",
+          "Group workshops"
         ],
-        "price": 350
+        "price": 175
       }
     }
   }
@@ -586,11 +594,15 @@
   "title": "I will make a personalized fitness plan",
   "price": 150,
   "owner": {
-    "_id": "u113",
-    "fullname": "Emily Ray",
-    "imgUrl": "/img/faces/Emily Ray.jpg",
+    "_id": {
+      "$oid": "67a095ef28e591c85185716c"
+    },
+    "fullname": "Neria Okabi",
+    "imgUrl": "/img/faces/Neria Okabi.jpg",
+    "username": "neriaok",
+    "password": "12345",
     "level": "Top Rated",
-    "rate": 4.9
+    "rate": 4
   },
   "daysToMake": 7,
   "description": "Personalized fitness plan for your specific goals, from beginner to advanced.",
@@ -602,7 +614,7 @@
     "/img/img7third.jpg"
   ],
   "tags": [
-    "business"
+    "consulting"
   ],
   "likedByUsers": [
     "user8",
@@ -697,7 +709,9 @@
     "/img/img8second.jpg"
   ],
   "tags": [
-    "writing&translation"
+    "writing&translation",
+    "consulting",
+    "business"
   ],
   "likedByUsers": [
     "user3",
@@ -774,7 +788,7 @@
     "$oid": "67a1e35919de86043c4f2630"
   },
   "title": "I will design a professional business card for you",
-  "price": 75,
+  "price": 300,
   "owner": {
     "_id": "u117",
     "fullname": "Sophia Adams",
@@ -788,10 +802,18 @@
   "loc": "UK",
   "imgUrls": [
     "/img/img9.jpg",
-    "/img/img9second.jpg"
+    "/img/img9second.jpg",
+    "/img/img9third.jpg",
+    "/img/img9four.jpg",
+    "/img/img9five.jpg",
+    "/img/img9six.jpg",
+    "/img/img9seven.jpg"
   ],
   "tags": [
-    "graphics&design"
+    "graphics&design",
+    "business",
+    "consulting",
+    "programing&tech"
   ],
   "likedByUsers": [
     "user10"
@@ -833,7 +855,7 @@
           "Custom business card design",
           "Two-sided design"
         ],
-        "price": 75
+        "price": 300
       },
       "standard": {
         "services": [
@@ -841,7 +863,7 @@
           "Two-sided design",
           "Print-ready files"
         ],
-        "price": 100
+        "price": 350
       },
       "premium": {
         "services": [
@@ -850,7 +872,7 @@
           "Print-ready files",
           "Unlimited revisions"
         ],
-        "price": 150
+        "price": 500
       }
     }
   }
@@ -869,7 +891,7 @@
     "imgUrl": "/img/faces/Reut Edry.jpg",
     "username": "reuted",
     "password": "password123",
-    "level": "premium",
+    "level": "Level 2",
     "rate": 4.8
   },
   "daysToMake": 5,
@@ -881,7 +903,10 @@
     "/img/img10second.jpg"
   ],
   "tags": [
-    "video&animation"
+    "video&animation",
+    "business",
+    "ai-services",
+    "Marketing"
   ],
   "likedByUsers": [
     "user11"
@@ -959,7 +984,7 @@
     "imgUrl": "/img/faces/Aviv Buzaglo.jpg",
     "username": "avivbu",
     "password": "678910",
-    "level": "premium",
+    "level": "Level 2",
     "rate": 4.6
   },
   "daysToMake": 4,
@@ -971,7 +996,9 @@
     "/img/img11second.jpg"
   ],
   "tags": [
-    "graphics&design"
+    "graphics&design",
+    "writing&translation",
+    "Marketing"
   ],
   "likedByUsers": [
     "user12"
@@ -1046,10 +1073,10 @@
       "$oid": "67a095ef28e591c85185716c"
     },
     "fullname": "Neria Okabi",
-    "imgUrl": "/img/faces/Neria okabi.jpg",
+    "imgUrl": "/img/faces/Neria Okabi.jpg",
     "username": "neriaok",
     "password": "12345",
-    "level": "basic",
+    "level": "Top Rated",
     "rate": 4.7
   },
   "daysToMake": 4,
@@ -1061,7 +1088,9 @@
     "/img/img12second.jpg"
   ],
   "tags": [
-    "music&audio"
+    "music&audio",
+    "business",
+    "video&animation"
   ],
   "likedByUsers": [
     "user13"
