@@ -41,7 +41,7 @@ async function getById(gigId) {
 	try {
 		const criteria = { _id: ObjectId.createFromHexString(gigId) }
 
-		const collection = await dbService.getCollection('gig')
+		const collection = await dbService.getCollection('gigs')
 		const gig = await collection.findOne(criteria)
 
 		gig.createdAt = gig._id.getTimestamp()
@@ -62,7 +62,7 @@ async function remove(gigId) {
 		}
 		if (!isAdmin) criteria['owner._id'] = ownerId
 
-		const collection = await dbService.getCollection('gig')
+		const collection = await dbService.getCollection('gigs')
 		const res = await collection.deleteOne(criteria)
 
 		if (res.deletedCount === 0) throw ('Not your gig')
@@ -75,7 +75,7 @@ async function remove(gigId) {
 
 async function add(gig) {
 	try {
-		const collection = await dbService.getCollection('gig')
+		const collection = await dbService.getCollection('gigs')
 		await collection.insertOne(gig)
 
 		return gig
@@ -91,7 +91,7 @@ async function update(gig) {
 	try {
 		const criteria = { _id: ObjectId.createFromHexString(gig._id) }
 
-		const collection = await dbService.getCollection('gig')
+		const collection = await dbService.getCollection('gigs')
 		await collection.updateOne(criteria, { $set: gigToSave })
 
 		return gig
@@ -106,7 +106,7 @@ async function addGigMsg(gigId, msg) {
 		const criteria = { _id: ObjectId.createFromHexString(gigId) }
 		msg.id = makeId()
 
-		const collection = await dbService.getCollection('gig')
+		const collection = await dbService.getCollection('gigs')
 		await collection.updateOne(criteria, { $push: { msgs: msg } })
 
 		return msg
@@ -120,7 +120,7 @@ async function removeGigMsg(gigId, msgId) {
 	try {
 		const criteria = { _id: ObjectId.createFromHexString(gigId) }
 
-		const collection = await dbService.getCollection('gig')
+		const collection = await dbService.getCollection('gigs')
 		await collection.updateOne(criteria, { $pull: { msgs: { id: msgId } } })
 
 		return msgId

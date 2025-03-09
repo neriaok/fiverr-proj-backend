@@ -51,6 +51,7 @@ setupSocketAPI(server)
 app.get('/**', (req, res) => {
     res.sendFile(path.resolve('public/index.html'))
 })
+console.log('hello');
 
 import { logger } from './services/logger.service.js'
 const port = process.env.PORT || 3030
