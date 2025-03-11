@@ -8,7 +8,7 @@
     "_id": "u113",
     "fullname": "Emily Ray",
     "imgUrl": "/img/faces/Emily Ray.jpg",
-    "level": "Top Rated",
+    "level": "Level 1",
     "rate": 4.9
   },
   "daysToMake": 8,
@@ -206,7 +206,7 @@
     "$oid": "67a1e33c19de86043c4f2629"
   },
   "title": "I will help you with your social media",
-  "price": 400,
+  "price": 1000,
   "owner": {
     "_id": {
       "$oid": "67a095ef28e591c85185716d"
@@ -275,7 +275,7 @@
           "Content calendar creation",
           "Growth tactics (followers, engagement, and brand awareness)"
         ],
-        "price": 400
+        "price": 1000
       },
       "standard": {
         "services": [
@@ -286,7 +286,7 @@
           "Monthly performance reports",
           "Competitor analysis"
         ],
-        "price": 550
+        "price": 1550
       },
       "premium": {
         "services": [
@@ -299,7 +299,7 @@
           "Advanced advertising strategy",
           "Crisis management plan"
         ],
-        "price": 650
+        "price": 1650
       }
     }
   }
@@ -309,7 +309,7 @@
     "$oid": "67a1e33c19de86043c4f262a"
   },
   "title": "I will edit your YouTube song video",
-  "price": 150,
+  "price": 650,
   "owner": {
     "_id": "u107",
     "fullname": "Lugas V",
@@ -403,7 +403,7 @@
     "$oid": "67a1e33c19de86043c4f262b"
   },
   "title": "I will create a professional website for you",
-  "price": 800,
+  "price": 1400,
   "owner": {
     "_id": "u109",
     "fullname": "Saar Lee",
@@ -692,7 +692,7 @@
     "$oid": "67a1e35919de86043c4f262f"
   },
   "title": "I will translate your documents",
-  "price": 80,
+  "price": 900,
   "owner": {
     "_id": "u115",
     "fullname": "John Miller",
@@ -793,7 +793,7 @@
     "_id": "u117",
     "fullname": "Sophia Adams",
     "imgUrl": "/img/faces/Sophia Adams.jpg",
-    "level": "Level 1",
+    "level": "Top Rated",
     "rate": 4.9
   },
   "daysToMake": 3,
@@ -1076,7 +1076,7 @@
     "imgUrl": "/img/faces/Neria Okabi.jpg",
     "username": "neriaok",
     "password": "12345",
-    "level": "Top Rated",
+    "level": "Level 2",
     "rate": 4.7
   },
   "daysToMake": 4,
